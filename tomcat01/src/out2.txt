@@ -1,0 +1,9 @@
+Browser: HTTP/1.1 200                                   # 版本和状态
+Browser: Accept-Ranges: bytes                           # 是否支持断点续传
+Browser: ETag: W/"3-1573386445113"                      # 访问时间戳
+Browser: Last-Modified: Sun, 10 Nov 2019 11:47:25 GMT   # 文件最后修改时间
+Browser: Content-Type: text/html                        # 返回文件格式
+Browser: Content-Length: 3                              # 返回文件长度
+Browser: Date: Sun, 10 Nov 2019 14:30:16 GMT            # 当前服务器时间信息
+Browser:                                                # null结束符
+Browser: aaa                                            # 网页内容

@@ -1,0 +1,31 @@
+Tomcat: Server start at 9092 port
+Tomcat: GET /hujun.html HTTP/1.1                              # 方式GET 访问hujun.html文件 协议
+Tomcat: Host: localhost:9092                                  # 访问主机地址及端口
+Tomcat: Connection: keep-alive                                # 保持连接
+Tomcat: Cache-Control: max-age=0                              # 最大缓存时间
+Tomcat: DNT: 1                                                # do not track 禁止跟踪
+Tomcat: Upgrade-Insecure-Requests: 1                          # 安全升级需求
+Tomcat: User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) # 浏览器类型，操作系统
+        AppleWebKit/537.36 (KHTML, like Gecko)                # 内核信息
+        Chrome/77.0.3865.90 Safari/537.36
+Tomcat: Sec-Fetch-Mode: navigate
+Tomcat: Sec-Fetch-User: ?1
+Tomcat: Accept: text/html,application/xhtml+xml,application/xml;
+        q=0.9,image/webp,image/apng,*/*;                      # 浏览器可以接受的文件类型
+        q=0.8,application/signed-exchange;
+        v=b3
+Tomcat: Sec-Fetch-Site: cross-site
+Tomcat: Accept-Encoding: gzip, deflate, br                    # 可以直接打开的压缩文件格式
+Tomcat: Accept-Language: zh,en;q=0.9,zh-CN;q=0.8,zh-HK;q=0.7  # 浏览器接受语言
+Tomcat: Cookie: JSESSIONID.03d131e7=node0ucu6wf5zayc426pq50p16lw52.node0;
+        JSESSIONID.6eaaf254=node0zh587aplpko7150i10t1r7vp01.node0;
+        JSESSIONID.8c4b0b74=node01ifxsah6pcd6j1k83i3szb451q1.node0;
+        JSESSIONID.ee4022d9=node01nega35cdr3gy19xyxwlqbmbfz1.node0;
+        JSESSIONID.e6ec5229=node0yt5y18w79gkzexpd4nbhx4d4.node0;
+        JSESSIONID.78790780=node01vak5r6sef7981xf6p9nieu0p2.node0;
+        screenResolution=1920x1080;
+        JSESSIONID.f8def929=node012uj444vrg7wu1h0yper1indzt1.node0;
+        JSESSIONID.93467682=node01s1vy78yfmt7grpaompfqp43g0.node0;
+        voter_id=92cca655bbbc6c51;
+        io=IPU_DZ-8XUoVhfxwAAAE
+Tomcat:                                                       # null 表示结束

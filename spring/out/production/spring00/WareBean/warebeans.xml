@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <bean id="auditorium" class="WareBean.Auditorium" scope="singleton"
+          init-method="turnOnLights"
+          destroy-method="turnOffLights"
+    />
+
+    <bean id="juggle" class="WareBean.Juggle">
+        <constructor-arg name="beanBags" value="5"/>
+    </bean>
+
+    <bean id="danceJuggle" class="WareBean.DanceJuggle">
+        <constructor-arg value="15"/>
+        <constructor-arg ref="sonnet29"/>
+    </bean>
+    <bean id="sonnet29" class="WareBean.Sonnet29"/>
+    <bean id="tickets" class="WareBean.Tickets" scope="prototype">
+        <property name="counts" value="10"/>
+    </bean>
+
+    <bean id="kenny" class="WareBean.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument" ref="saxophone"/>
+    </bean>
+
+    <bean id="saxophone" class="WareBean.Saxophone"/>
+    <bean id="piano" class="WareBean.Piano"/>
+
+    <bean id="pianor" class="WareBean.Instrumentalist"
+          p:song = "Shes Wonderful"
+          p:instrument-ref="piano"
+    />
+
+    <bean id="oneManBand" class="WareBean.OneManBand">
+        <property name="song" value="Michale meets Mozate"/>
+        <property name="instruments">
+            <list>
+                <ref bean="saxophone"/>
+                <ref bean="piano"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="oneManPlay" class="WareBean.OneManPlay">
+        <property name="instrumentMap">
+            <map>
+                <entry key="Dancing Sea" value-ref="piano"/>
+                <entry key="Crush On You" value="#{saxophone}"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="spel" class="WareBean.SpEL"
+          p:count="#{5}"
+          p:message="The value is #{pianor.screamSong()}"
+          p:frequency="#{T(java.lang.Math).PI}"
+          p:capacity="#{1e4}"
+    />
+
+    <util:list id="cities">
+        <bean class="WareBean.CitySpEL" p:name="Chicago" p:state="IL" p:population="2304"/>
+        <bean class="WareBean.CitySpEL" p:name="Atlanta" p:state="GA" p:population="4234"/>
+        <bean class="WareBean.CitySpEL" p:name="Dallas" p:state="TX" p:population="2234"/>
+        <bean class="WareBean.CitySpEL" p:name="Houston" p:state="TX" p:population="2134"/>
+        <bean class="WareBean.CitySpEL" p:name="Odessa" p:state="TX" p:population="1234"/>
+        <bean class="WareBean.CitySpEL" p:name="El Paso" p:state="TX" p:population="2324"/>
+        <bean class="WareBean.CitySpEL" p:name="Jal" p:state="NM" p:population="2341"/>
+        <bean class="WareBean.CitySpEL" p:name="Cruces" p:state="NM" p:population="2343"/>
+    </util:list>
+    <bean id="city" class="WareBean.CitySpEL">
+        <property name="chosenCity" value="#{cities[T(java.lang.Math).random()*cities.size()]}"/>
+        <property name="aBigCity" value="#{cities.^[population gt 2234]}"/>
+        <property name="bigCities" value="#{cities.?[population gt 2234]}"/>
+        <property name="cityNames" value="#{cities.![name]}"/>
+    </bean>
+
+</beans>

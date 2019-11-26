@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+       <bean id="soldier" class="Soldier">
+           <constructor-arg name="w" ref="weapon"/>
+       </bean>
+       <bean id="weapon" class="Weapon">
+           <constructor-arg name="type" value="MP5"/>
+       </bean>
+       <bean id="training" class="Training"/>
+    <aop:config>
+        <aop:aspect ref="training">
+            <aop:pointcut id="shooting" expression="execution(* Soldier.showWeapon())"/>
+            <aop:before method="beforeShooting" pointcut-ref="shooting"/>
+            <aop:after method="afterShooting" pointcut-ref="shooting"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
