@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7cd1d58-7472-475e-a4f8-59be1263c0af" name="Default Changelist" comment="" />
+    <list default="true" id="e7cd1d58-7472-475e-a4f8-59be1263c0af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AOP/Perform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AOP/MainPerform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AOP/MainPerform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AOP/Performance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AOP/Performance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AOP/aop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/aops.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,14 +18,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1U8YneEp8IlA71GlwBToUnhfJLg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="C:/spring/libs/aspectjweaver-1.8.7.jar!/" />
@@ -29,6 +41,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\code\java\spring\src\" />
+      <recent name="C:\code\java\spring\src" />
       <recent name="C:\code\java\spring\src\WareBean" />
     </key>
   </component>
@@ -44,10 +58,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainPlatform">
+  <component name="RunManager" selected="Application.MainPerform">
     <configuration name="MainAOP" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainAOP" />
       <module name="spring00" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPerform" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AOP.MainPerform" />
+      <module name="spring00" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AOP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,6 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainPerform" />
         <item itemvalue="Application.MainPlatform" />
       </list>
     </recent_temporary>
@@ -82,10 +110,22 @@
       <option name="presentableId" value="Default" />
       <updated>1574739858189</updated>
       <workItem from="1574739861641" duration="15964000" />
+      <workItem from="1574862506317" duration="1438000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
