@@ -1,5 +1,7 @@
 .metadata/
 .vscode/
+.vscode/*
+.metadata/*
 # Compiled class file
 *.class
 
