@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="struct2" extends="struts-default">
+        <global-results>
+            <result>index.jsp</result>
+        </global-results>
+        <action name="Login" class="LoginAction">
+            <result name="input">login.jsp</result>
+            <result name="success">success.jsp</result>
+        </action>
+    </package>
+</struts>
