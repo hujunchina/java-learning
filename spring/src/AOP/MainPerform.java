@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainPerform {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("aops.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("AOP/aops.xml");
         Perform p = (Perform) context.getBean("littleDot");
         p.play();
     }

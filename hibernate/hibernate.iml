@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
-    <facet type="Spring" name="Spring">
+    <facet type="hibernate" name="Hibernate">
       <configuration>
-        <fileset id="fileset" name="Beans" removed="false">
-          <file>file://$MODULE_DIR$/src/beans.xml</file>
-          <file>file://$MODULE_DIR$/src/warebeans.xml</file>
-          <file>file://$MODULE_DIR$/src/AOP/aop.xml</file>
-          <file>file://$MODULE_DIR$/src/DAO/dao.xml</file>
-        </fileset>
+        <datasource-map />
+        <naming-strategy-map />
       </configuration>
     </facet>
   </component>
@@ -19,6 +15,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Spring-4.3.18.RELEASE" level="project" />
+    <orderEntry type="library" name="Hibernate 5.4.9-5.4.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.27" level="application_server_libraries" />
   </component>
 </module>
