@@ -26,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1U8YneEp8IlA71GlwBToUnhfJLg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -35,11 +36,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/spring/libs/aspectjweaver-1.8.7.jar!/" />
+    <property name="last_opened_file_path" value="C:/cmd/cmder/vendor/git-for-windows/bin/git.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -115,6 +116,7 @@
       <workItem from="1574739861641" duration="15964000" />
       <workItem from="1574862506317" duration="5893000" />
       <workItem from="1574944535049" duration="862000" />
+      <workItem from="1575095046955" duration="6809000" />
     </task>
     <servers />
   </component>
