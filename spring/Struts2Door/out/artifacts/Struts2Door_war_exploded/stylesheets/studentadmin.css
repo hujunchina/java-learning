@@ -1,0 +1,82 @@
+/* line 1, ../sass/studentadmin.scss */
+.page-top {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 1px solid lightgreen;
+}
+/* line 5, ../sass/studentadmin.scss */
+.page-top h1 {
+  font-family: Georgia;
+  margin-top: 1em;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 14, ../sass/studentadmin.scss */
+.page-left {
+  float: left;
+  width: 20%;
+}
+/* line 17, ../sass/studentadmin.scss */
+.page-left .page-list {
+  margin: 0 auto;
+  padding: 0.5em;
+  text-align: center;
+}
+/* line 21, ../sass/studentadmin.scss */
+.page-left .page-list ul {
+  margin: 0.5em;
+}
+/* line 23, ../sass/studentadmin.scss */
+.page-left .page-list ul li {
+  list-style-type: none;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+  line-height: 2em;
+}
+/* line 31, ../sass/studentadmin.scss */
+.page-left .page-list ul li span a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 41, ../sass/studentadmin.scss */
+.page-right {
+  float: left;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 8em;
+}
+/* line 47, ../sass/studentadmin.scss */
+.page-right container {
+  margin: 5em auto 0;
+  text-align: center;
+  font-size: 1em;
+}
+/* line 51, ../sass/studentadmin.scss */
+.page-right container table {
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+/* line 55, ../sass/studentadmin.scss */
+.page-right container input[type="text"] {
+  line-height: 1.5em;
+}
+/* line 58, ../sass/studentadmin.scss */
+.page-right container input[type="submit"] {
+  line-height: 1.5em;
+  border: 1px solid lightgreen;
+  background-color: lightgreen;
+  color: white;
+}
+/* line 64, ../sass/studentadmin.scss */
+.page-right container input[type="reset"] {
+  line-height: 1.5em;
+  border: 1px solid lightcyan;
+  background-color: lightcyan;
+  color: lightgreen;
+}
