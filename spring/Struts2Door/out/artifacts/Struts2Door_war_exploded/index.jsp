@@ -14,5 +14,6 @@
   </head>
   <body>
   hello
+  <p><a href="05MessageBoard/index.jsp">MessageBoard</a></p>
   </body>
 </html>

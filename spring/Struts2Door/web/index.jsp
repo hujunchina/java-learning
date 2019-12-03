@@ -14,5 +14,8 @@
   </head>
   <body>
   hello
+  <p><a href="03BeanShop/shop.jsp">Shop</a></p>
+  <p><a href="04StudentInfoAdmin/studentadmin.jsp">StudentAdmin</a></p>
+  <p><a href="05MessageBoard/index.jsp">MessageBoard</a></p>
   </body>
 </html>
