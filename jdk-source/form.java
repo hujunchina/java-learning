@@ -1,33 +1,29 @@
-public enum Singleton {
-    INSTANCE;
-    private String objName;
-    public String getObjName() {
-        return objName;
+public interface Duck {
+    void quack();
+}
+public interface Turkey {
+    void gobble();
+}
+public class WildTurkey implements Turkey {
+    @Override
+    public void gobble() {
+        System.out.println("gobble!");
     }
-    public void setObjName(String objName) {
-        this.objName = objName;
+}
+public class TurkeyAdapter implements Duck {
+    Turkey turkey;
+    public TurkeyAdapter(Turkey turkey) {
+        this.turkey = turkey;
     }
+    @Override
+    public void quack() {
+        turkey.gobble();
+    }
+}
+public class Client {
     public static void main(String[] args) {
-
-
-// 单例测试
-Singleton firstSingleton = Singleton.INSTANCE;
-firstSingleton.setObjName("firstName");
-System.out.println(firstSingleton.getObjName());
-Singleton secondSingleton = Singleton.INSTANCE;
-secondSingleton.setObjName("secondName");
-System.out.println(firstSingleton.getObjName());
-System.out.println(secondSingleton.getObjName());
-
-
-// 反射获取实例测试
-try {
-Singleton[] enumConstants = Singleton.class.getEnumConstants();
-for (Singleton enumConstant : enumConstants) {
-System.out.println(enumConstant.getObjName());
-}
-} catch (Exception e) {
-e.printStackTrace();
-}
-}
+        Turkey turkey = new WildTurkey();
+        Duck duck = new TurkeyAdapter(turkey);
+        duck.quack();
+    }
 }
